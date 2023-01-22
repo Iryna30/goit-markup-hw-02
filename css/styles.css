@@ -1,0 +1,36 @@
+/* title text color #2E2F42 */
+/* body text color #434455 */
+/*  subtle text color #8E8F99 */
+/* primary brand color #4D5AE5 */
+/* pressed state color #404BBF */
+/* accent color #E7E9FC */
+/* light accent color #F4F4FD */
+:root {
+  --body-text-color: #434455;
+  --primary-brand-color: #4d5ae5;
+  --title-text-color: #2e2f42;
+  --pressed-state-color: #404bbf;
+}
+
+body {
+  color: var(--body-text-color);
+}
+
+.list {
+  list-style: none;
+}
+/* Site nav */
+.site-nav {
+  color: var(--title-text-color);
+}
+
+.contact-nav .link {
+  color: var(--body-text-color);
+}
+
+.site-nav:hover,
+.site-nav:focus,
+.contact-nav .link:hover,
+contact-nav .link:focus {
+  color: var(--pressed-state-color);
+}
