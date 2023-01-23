@@ -1,36 +1,122 @@
-/* title text color #2E2F42 */
-/* body text color #434455 */
+/* title and background color NAVYBLUE  #2E2F42 */
+/* body text color SLATE #434455 */
 /*  subtle text color #8E8F99 */
-/* primary brand color #4D5AE5 */
-/* pressed state color #404BBF */
-/* accent color #E7E9FC */
-/* light accent color #F4F4FD */
+/* primary brand color IRIS #4D5AE5 */
+/* pressed state color OCEAN #404BBF */
+/* accent color CORNFLOWER #E7E9FC */
+/* light accent color CLOUD #F4F4FD */
 :root {
   --body-text-color: #434455;
   --primary-brand-color: #4d5ae5;
-  --title-text-color: #2e2f42;
+  --title-background-color: #2e2f42;
   --pressed-state-color: #404bbf;
+  --light-accent-color: #f4f4fd;
+  --accent-color-footer: #e7e9fc;
 }
 
 body {
   color: var(--body-text-color);
+  background-color: #fff;
 }
+/* logo */
+.logo {
+  color: var(--title-background-color);
+  text-decoration: none;
+}
+.logo-accent {
+  color: var(--primary-brand-color);
+}
+
+/* Site nav */
 
 .list {
   list-style: none;
 }
-/* Site nav */
-.site-nav {
-  color: var(--title-text-color);
+
+.link {
+  text-decoration: none;
 }
 
+.site-nav {
+  color: var(--title-background-color);
+}
+.site-nav .link {
+  color: inherit;
+}
 .contact-nav .link {
   color: var(--body-text-color);
+  font-style: normal;
 }
 
-.site-nav:hover,
-.site-nav:focus,
-.contact-nav .link:hover,
-contact-nav .link:focus {
+.link:hover,
+.link:focus {
   color: var(--pressed-state-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--title-background-color);
+}
+
+.hero-title {
+  color: #ffffff;
+}
+.hero-button {
+  background-color: var(--primary-brand-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/* Features section */
+
+.features-title {
+  display: none;
+}
+
+.features-subtitle {
+  color: var(--title-background-color);
+}
+
+.features-descr {
+}
+
+/* Work section */
+
+.work-title {
+  color: var(--title-background-color);
+}
+
+/* Team section */
+
+.team-section {
+  background-color: var(--light-accent-color);
+}
+
+.team-title {
+  color: var(--title-background-color);
+}
+
+.team-subtitle {
+  color: var(--title-background-color);
+}
+
+.team-descr {
+}
+
+/* footer */
+.footer {
+  background-color: var(--title-background-color);
+  color: var(--light-accent-color);
+}
+
+.footer .logo {
+  color: inherit;
+}
+
+.text-footer {
+  color: var(--accent-color-footer);
 }
