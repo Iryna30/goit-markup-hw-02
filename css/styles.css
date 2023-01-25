@@ -185,7 +185,7 @@ body {
 }
 
 /* --------Portfolio Page ---------*/
-.filter-btn{
+.filter-btn {
   background-color: var(--light-accent-color);
   color: var(--primary-brand-color);
   font-family: 'Roboto', sans-serif;
@@ -197,14 +197,17 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
-.filter-btn:hover, .filter-btn:focus{
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--pressed-state-color);
-  color: #ffffff ;
+  color: #ffffff;
 }
 
-.exampl-subtitle{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
+.exampl-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.exampl-descr {
 }
